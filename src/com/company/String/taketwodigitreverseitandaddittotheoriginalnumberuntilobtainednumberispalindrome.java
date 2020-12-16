@@ -10,18 +10,7 @@ public class taketwodigitreverseitandaddittotheoriginalnumberuntilobtainednumber
 
    int reverse= reversenumber(input);
 
-
-        if (isplaindrome(reverse)){
-            System.out.println("Yes "+reverse);
-        }
-        do {
-
-         int  n=  reversenumber(reverse);
-
-            isplaindrome(n);
-
-        }while (!isplaindrome(reverse));
-
+   System.out.println(reverse);
 
   }
 
@@ -57,8 +46,13 @@ public class taketwodigitreverseitandaddittotheoriginalnumberuntilobtainednumber
 
         }
         value=Integer.parseInt(str);
+value+=main;
 
-        return value+main;
+if (isplaindrome(value)){
+    return value;
+}
+
+     return reversenumber(value);
 
     }
 
