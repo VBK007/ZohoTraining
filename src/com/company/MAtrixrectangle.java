@@ -6,8 +6,9 @@ import java.util.Scanner;
 public class MAtrixrectangle {
 
 static Scanner scanner=new Scanner(System.in);
+    static int i=5;
     public static void main(String[] args) {
-
+//       function(i);
         int[][] array=new int[4][4];
         System.out.println("Enter the array data one by one");
         for (int i=0;i<array.length;i++){
@@ -31,7 +32,14 @@ static Scanner scanner=new Scanner(System.in);
         System.out.println(count);
 
 
+
+
+
+
+
     }
+
+
 
     private static int printrectangle(int[][] array) {
        int row=array.length;
