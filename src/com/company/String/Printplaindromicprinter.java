@@ -29,7 +29,7 @@ public class Printplaindromicprinter {
             List<Integer> row=new ArrayList<>();
             row.add(1);
             for (int j=1;j<i;j++){
-                System.out.println(previousrow.get(j-1)+" "+previousrow.get(j));
+              
                 row.add(previousrow.get(j-1)+previousrow.get(j));
 
 
