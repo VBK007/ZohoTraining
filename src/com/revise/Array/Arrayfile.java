@@ -1,5 +1,6 @@
 package com.revise.Array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Arrayfile {
@@ -8,6 +9,8 @@ public static  int[] array;
    public static int[] firstarray;
   public static int[] secoundarray;
   public static int n;
+  public static char[] farray;
+  public static char[] secarray;
     public  static void getdata(){
 
         System.out.println("Enter the Array size");
@@ -56,6 +59,36 @@ public static  int[] array;
     }
 
 
+
+
+}
+
+
+public static void getdata4(){
+
+//        System.out.println("Enter the first array size");
+//        int array_size=scanner.nextInt();
+//      farray=new char[array_size];
+//        System.out.println("Enter the secound array size");
+//        array_size=scanner.nextInt();
+//        secarray=new char[array_size];
+//        System.out.println("Enter the array data one by one");
+//        for (int i=0;i< farray.length;i++){
+//            farray[i]=scanner.next().charAt(0);
+//        }
+//
+//        System.out.println("Enter the sec array data");
+//        for (int i=0;i< secarray.length;i++){
+//            secarray[i]=scanner.next().charAt(0);
+//        }
+
+    farray=new char[]{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'};
+    secarray=new char[]{
+            'a', 'b', 'd', 'e', 'e', 'g', 'g', 'i', 'i'
+    };
+System.out.println("Original array");
+        System.out.println(Arrays.toString(farray));
+        System.out.println(Arrays.toString(secarray));
 
 
 }
