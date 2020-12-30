@@ -27,11 +27,11 @@ public class maximumpossibelkgitnumber {
 
 
         String firstelemnt = "";
-        for (int i = 0; i < arraysize; i++) {
+        for (int i = arraysize-1; i >0; i--) {
             firstelemnt += array[i];
-            mainmax = array[i];
 
-            for (int j = 0; j < arraysize; j++) {
+
+            for (int j = arraysize-1; j >0; j--) {
                 ji += array[j];
                 str = firstelemnt;
 

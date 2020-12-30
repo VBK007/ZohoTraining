@@ -40,6 +40,8 @@ public class noofgrandchildrenm {
             }
         }
 
+System.out.println(Arrays.toString(father));
+        System.out.println(Arrays.toString(child));
 
         System.out.println("Enter the father name to search");
         String search=scanner.next();
@@ -49,6 +51,8 @@ public class noofgrandchildrenm {
                 list.add(child[i]);
             }
         }
+
+        System.out.println(Arrays.toString(new ArrayList[]{list}));
         int count=0;
 
         for (int i=0;i<list.size();i++){

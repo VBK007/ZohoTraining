@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class PrintPatterns {
     public static void main(String[] args) {
-String str=" ";
+        String str = " ";
         System.out.println("Enter the integers input");
         Scanner scanner = new Scanner(System.in);
         int input = scanner.nextInt();
-        int a=0;
+        int a = 0;
 
         int sum = 1;
         for (int i = 0; i < input; i++) {
@@ -18,27 +18,24 @@ String str=" ";
         }
 
 
-
-
-
         for (int i = 0; i < sum; i++) {
-           int count=i;
-int remaindercount=0;
-        while (count>0){
+            int count = i;
+            int remaindercount = 0;
+            while (count > 0) {
 
                 int rem = count % 2;
-                str=rem+str;
+                str = rem + str;
                 remaindercount++;
-                  count=count/2;
+                count = count / 2;
 
 
             }
 
 
-      while (remaindercount<input){
-         System.out.print(0);
-         remaindercount++;
-      }
+            while (remaindercount < input) {
+                System.out.print(0);
+                remaindercount++;
+            }
             System.out.print(str);
 //            if(j<=input)
 //            {
@@ -47,11 +44,10 @@ int remaindercount=0;
 //                j++;
 //            }
 
-str=" ";
+            str = " ";
 
 
-           System.out.println( );
-
+            System.out.println();
 
 
         }
