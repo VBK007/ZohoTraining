@@ -11,6 +11,9 @@ public class Arrayfiles {
     public static int[] secoundarray;
     static char[] firstchar;
     static char[] secchar;
+    public static String string;
+    public int arraysize;
+
     public static void getdatachar(){
         System.out.println("Enter the first string size");
         scanner=new Scanner(System.in);
@@ -81,6 +84,62 @@ public class Arrayfiles {
 
         System.out.println("Enter the array data one by one");
         for (int i=0;i<firstarray.length;i++){
+            firstarray[i]=scanner.nextInt();
+
+
+
+        }
+
+        System.out.println("The Original array is");
+        System.out.println(Arrays.toString(firstarray));
+    }
+
+
+    public static void getvo(){
+        System.out.println("Enter the String");
+        scanner=new Scanner(System.in);
+        string=scanner.nextLine();
+        firstchar=string.toCharArray();
+
+        System.out.println(Arrays.toString(firstchar));
+        String j="";
+        int count=0;
+        for (int i=0;i< firstchar.length;i++){
+            if (isvoweel(firstchar[i])){
+                j+=firstchar[i];
+                count++;
+            }
+
+        }
+
+
+        for (int i=0;i<firstchar.length;i++){
+            if (isvoweel(firstchar[i])){
+                firstchar[i]=j.charAt(--count);
+            }
+        }
+
+
+
+
+
+        System.out.println(Arrays.toString(firstchar));
+
+
+    }
+
+    private static boolean isvoweel(char c) {
+        return c=='a' || c=='e'|| c=='i' || c=='o'||c=='u' ;
+    }
+
+    public static void getdata2() {
+        System.out.println("Enter the first array size");
+        scanner=new Scanner(System.in);
+        int arraysize=scanner.nextInt();
+        firstarray=new int[20];
+
+        System.out.println("Enter the array data one by one");
+        for (int i=0;i<arraysize;i++){
             firstarray[i]=scanner.nextInt();
 
 
