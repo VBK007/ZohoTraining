@@ -15,6 +15,7 @@ public class setofwords {
 
         System.out.println("Enter the String to search");
         String search = scanner.nextLine();
+        search=search.toUpperCase();
         int count = 0;
         for (int i = 0; i < words.length; i++) {
             for (int j = 0; j < words[i].length; j++) {

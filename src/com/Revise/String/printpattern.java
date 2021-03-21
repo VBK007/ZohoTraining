@@ -14,6 +14,7 @@ public class printpattern {
             result = result * 2;
             number--;
         }
+        System.out.println(result);
         String str=" ";
         for (int i=0;i<result;i++){
             int num=i;

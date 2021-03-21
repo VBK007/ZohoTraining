@@ -25,7 +25,8 @@ public class Removeunbalancedparantheis {
         int open = 0;
 
         char[] array =input.toCharArray();
-        for (int c=0;c<array.length;c++) {
+        int c=0;
+        for ( c=0;c<array.length;c++) {
 
             if (input.charAt(c) == '(') {
 
@@ -39,8 +40,9 @@ public class Removeunbalancedparantheis {
 
             string.append(c);
 
-        }
 
+        }
+System.out.println(string);
 
         StringBuilder result = new StringBuilder();
         for (int i = input.length() - 1; i >= 0; i--) {
