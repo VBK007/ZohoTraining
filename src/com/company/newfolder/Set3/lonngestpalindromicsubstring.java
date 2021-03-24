@@ -24,12 +24,12 @@ public class lonngestpalindromicsubstring {
         for (int i = 0; i < str1.length(); i++) {
             int len1 = findMaxlenth(str1, i, i);
             int len2 = findMaxlenth(str1, i, i + 1);
-int len=Math.max(len1,len2);
-if (len>end-start){
+            int len = Math.max(len1, len2);
+            if (len > end - start) {
 
-    start=i-((len)-1)/2;
-    end=i+(len/2);
-}
+                start = i - ((len) - 1) / 2;
+                end = i + (len / 2);
+            }
 
         }
 

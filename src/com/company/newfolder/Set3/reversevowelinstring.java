@@ -9,9 +9,7 @@ public class reversevowelinstring {
         System.out.println("Enter the String");
         Scanner scanner=new Scanner(System.in);
         String input=scanner.nextLine();
-        
         char[] ch=input.toCharArray();
-        
      makereverse(ch,ch.length);
         System.out.println(Arrays.toString(ch));
     }
